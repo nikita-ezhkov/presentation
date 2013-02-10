@@ -1,0 +1,57 @@
+.hidden {
+    position: relative;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+    opacity: 0;
+        -o-transition: opacity 0.2s linear;
+        -moz-transition: opacity 0.2s linear;
+        -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+.tour,
+.additional {
+    margin: 20px;
+}
+
+.tour-slide .icon {
+    margin-top: -4px;
+    margin-bottom: -2px;
+    vertical-align: middle;
+}
+
+.tour-slide-stages {
+        -o-transition: background 0.5s linear;
+        -moz-transition: background 0.5s linear;
+        -webkit-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+.tour-slide.tour-slide-stage1 {
+    background-color: red;
+}
+
+.tour-slide.tour-slide-stage1 .first {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+}
+
+.tour-slide.tour-slide-stage2 {
+    background-color: green;
+}
+
+.tour-slide.tour-slide-stage2 .first,
+.tour-slide.tour-slide-stage2 .second {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+}
+
+.tour-slide.tour-slide-stage3 {
+    background-color: blue;
+}
+
+.tour-slide.tour-slide-stage3 .first,
+.tour-slide.tour-slide-stage3 .second,
+.tour-slide.tour-slide-stage3 .third {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+}

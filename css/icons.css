@@ -1,0 +1,26 @@
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/controls.png") no-repeat;
+}
+
+.icon-prev {
+    background-position: 0 0;
+}
+
+.icon-next {
+    background-position: -16px 0;
+}
+
+.icon-rew {
+    background-position: -32px 0;
+}
+
+.icon-ff {
+    background-position: -48px 0;
+}
+
+.icon-play {
+    background: -64px 0;
+}

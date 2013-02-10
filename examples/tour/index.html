@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Презентации</title>
+
+    <link rel="stylesheet" href="../../css/icons.css">
+    <link rel="stylesheet" href="../../css/presentation.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="stylesheet" href="css/tour.css">
+
+    <!--[if IE ]>
+        <link rel="stylesheet" type="text/css" href="../../css/ie.css"/>
+    <![endif]-->
+
+    <script type="text/javascript" src="../../js/lib/jquery-1.9.0.js"></script>
+    <script type="text/javascript" src="../../js/presentation/core.js"></script>
+    <script type="text/javascript" src="../../js/presentation/effects/horizontal-slider.js"></script>
+    <script type="text/javascript" src="../../js/presentation/effects/fade.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+    <div class="presentation tour j-presentation" data-presentation-name="tour">
+        <div class="presentation-slides">
+            <div class="presentation-slide tour-slide j-presentation-slide">
+                <h2>Слайд 1</h2>
+                <p>Это пример презентации.</p>
+                <p>Чтобы увидеть следующий слайд кликните на иконку <i class="icon icon-next"></i> (&laquo;далее&raquo;)
+                    в панели навигации.</p>
+            </div>
+            <div class="presentation-slide tour-slide j-presentation-slide">
+                <h2>Слайд 2</h2>
+                <p>Отлично! Теперь вы можете перемещаться по презентации стрелками
+                    <code>&larr;</code> и <code>&rarr;</code>, или листать вперед нажатием
+                    <code>Space</code>. Обработчики &laquo;биндятся&raquo; при клике на презентацию и
+                    не обрабатывают нажания в <code>input</code>, <code>textarea</code>, и элементах с атрибутом <code>contenteditable="true"</code>.</p>
+                <p>Отключить управление с клавиатуры можно нажав на <code>Esc</code>.</p>
+            </div>
+            <div class="presentation-slide tour-slide tour-slide-stages j-presentation-slide" data-stages="tour-slide-stage1, tour-slide-stage2, tour-slide-stage3">
+                <h2>Слайд 3</h2>
+                <p>Слайд может иметь несколько состояний.</p>
+                <ol>
+                    <li class="hidden first">Первое</li>
+                    <li class="hidden second">Второе</li>
+                    <li class="hidden third">Третье</li>
+                </ol>
+            </div>
+            <div class="presentation-slide tour-slide j-presentation-slide">
+                <h2>Слайд 4</h2>
+                <p>Есть возможность быстрого перехода к слайду. Для этого в <code>input`е</code> 
+                    в панели навигации необходимо набрать его номер и нажать <code>Enter</code>, 
+                    или убрать фокус из поля.</p>
+                <p>В случае нажатия клавиши <code>Esc</code> или ввода несуществующего номера слайда
+                    значение вернется в исходное.</p>
+            </div>
+            <div class="presentation-slide tour-slide j-presentation-slide" data-transition="horizontalSlider">
+                <h2>Слайд 5</h2>
+                <p>Эффект смены слайда задается с помощью атрибута <code>data-transition="transitonName"</code>.
+                    Его можно определить для всей презентации описав у корневого элемента, и переопределить
+                    для конкретного слайда.</p>
+            </div>
+            <div class="presentation-slide tour-slide j-presentation-slide" data-transition="fade">
+                <h2>Слайд 6</h2>
+                <p>Эффекты подключаются как плагины, т.е. их можно подключать и дописывать по желанию 
+                    под конкретную презентацию.</p>
+            </div>
+            <div class="presentation-slide tour-slide j-presentation-slide" data-transition="horizontalSlider">
+                <h2>Слайд 7</h2>
+                <p>Если для презентации задано имя (атрибут <code>data-presentation-name</code> у корневого элемента),
+                    текущее состояние сохраняется в <code>hash</code>. Это дает возможность сохранить ссылку на 
+                    конкретный слайд, и сохраняет состояние при перезагрузке страницы.</p>
+            </div>
+            <div class="presentation-slide tour-slide j-presentation-slide">
+                <h2>Слайд 8</h2>
+                <p>Это последний слайд. <br>Начать с
+                    <span class="pseudoLink" onclick="$(this).closest('.j-presentation').data('presentation').toStart();">начала</span>.</p>
+            </div>
+                
+        </div>
+        <div class="presentation-controls">
+            <span class="presentation-button j-presentation-rew"><i class="icon icon-rew"></i></span>
+            <span class="presentation-button j-presentation-prev"><i class="icon icon-prev"></i></span>
+            <span class="presentation-button j-presentation-next"><i class="icon icon-next"></i></span>
+            <span class="presentation-button j-presentation-ff"><i class="icon icon-ff"></i></span>
+            <span class="presentation-position">
+                <input type="text" disabled class="presentation-position-current j-presentation-currentPosition">
+                <span class="presentation-position-max">/ <span class="j-presentation-length"></span></span>
+            </span>
+        </div>
+    </div>
+
+    <div class="presentation additional j-presentation" data-presentation-name="addition" data-transition="horizontalSlider">
+        <div class="presentation-slides">
+            <div class="presentation-slide j-presentation-slide">
+                <h2>Слайд 1</h2>
+                <p>Дополнительная презентация для тестирования сохраниения в <code>hash</code>
+                    состояния и управления с клавиатуры.</p>
+            </div>
+            <div class="presentation-slide j-presentation-slide">
+                <h2>Слайд 2</h2>
+                <p>Тут какая-то информация.</p>
+            </div>
+            <div class="presentation-slide j-presentation-slide">
+                <h2>Слайд 3</h2>
+                <p>И тут тоже какая-то информация.</p>
+            </div>
+        </div>
+        <div class="presentation-controls">
+            <span class="presentation-button j-presentation-rew"><i class="icon icon-rew"></i></span>
+            <span class="presentation-button j-presentation-prev"><i class="icon icon-prev"></i></span>
+            <span class="presentation-button j-presentation-next"><i class="icon icon-next"></i></span>
+            <span class="presentation-button j-presentation-ff"><i class="icon icon-ff"></i></span>
+            <span class="presentation-position">
+                <input type="text" disabled class="presentation-position-current j-presentation-currentPosition">
+                <span class="presentation-position-max">/ <span class="j-presentation-length"></span></span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+.presentation  {
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #999;
+    background: #CCC;
+}
+
+.presentation-slides {
+    position: relative;
+    margin: 7px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #999;
+}
+
+.presentation-slide {
+    position: relative;
+    padding: 3%;
+    display: none;
+    width: 94%;
+    height: 91%;
+    overflow: hidden;
+    background: #FFF;
+}
+
+.presentation-slide.current {
+    display: block;
+}
+
+.presentation-controls {
+    margin: 8px 15px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.presentation-position {
+    float: right;
+}
+
+.presentation-position-current {
+    padding: 1px 4px;
+    width: 19px;
+    text-align: right;
+    vertical-align: middle;
+    border: 1px solid #999;
+    background: #FFF;
+}
+
+.presentation-position-max {
+    vertical-align: middle;
+    line-height: 24px;
+}
+
+.presentation-button {
+    float: left;
+    margin-top: 4px;
+    margin-right: 10px;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+}
+
+.presentation-button.active {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+    cursor: pointer;
+}
+
+.presentation-button .icon {
+    vertical-align: top;
+}

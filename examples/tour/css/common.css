@@ -1,0 +1,80 @@
+body {
+    font-size: 62.5%;
+    font-family: Arial;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 0.5em;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h4 {
+    margin-bottom: 0.75em;
+    font-size: 2em;
+}
+
+h5 {
+    margin-bottom: 1em;
+    font-size: 1.5em
+}
+
+p,
+ol,
+ul {
+    font-size: 1.4em;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+ol, 
+ul {
+    margin-bottom: 1.5em;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul li {
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+    padding-left: 18px;
+    background: url('../img/li.gif') no-repeat -2px 0.5em;
+}
+
+ol li {
+    margin-left: 3em;
+    margin-bottom: 0.5em;
+}
+
+code {
+    margin: -1px 0;
+    padding: 1px 3px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    white-space: nowrap;
+    border: 1px solid #c0c0c0;
+    background: #e0e0e0;
+}
+
+.pseudoLink {
+    color: #12c;
+    border-bottom: 1px dashed #12c;
+    cursor: pointer;
+}

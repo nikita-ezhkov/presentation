@@ -1,0 +1,19 @@
+.hidden {
+    * display: none;
+}
+
+.tour-slide.tour-slide-stage1 .first {
+    * display: block;
+}
+
+.tour-slide.tour-slide-stage2 .first,
+.tour-slide.tour-slide-stage2 .second {
+    * display: block;
+}
+
+.tour-slide.tour-slide-stage3 .first,
+.tour-slide.tour-slide-stage3 .second,
+.tour-slide.tour-slide-stage3 .third {
+    * display: block;
+}
+

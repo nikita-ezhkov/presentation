@@ -1,0 +1,7 @@
+.presentation-button {
+    * filter:alpha(opacity=30);
+}
+
+.presentation-button .active {
+    * filter:alpha(enabled=false);
+}
