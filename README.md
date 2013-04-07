@@ -1,2 +1,2 @@
-my presentation
+presentation
 ============
